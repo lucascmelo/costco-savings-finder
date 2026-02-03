@@ -1,0 +1,30 @@
+{
+  "name": "@costco-savings-finder/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend API for Costco Savings Finder with OCR processing",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@costco-savings-finder/shared": "workspace:*",
+    "@types/node": "^22.10.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "multer": "^1.4.5-lts.1",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@costco-savings-finder/config": "workspace:*",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.12",
+    "tsx": "^4.19.2"
+  }
+}
